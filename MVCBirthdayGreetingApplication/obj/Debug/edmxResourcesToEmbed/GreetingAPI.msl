@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FacebookFriendsDBModelStoreContainer" CdmEntityContainer="FacebookFriendsDBEntities1">
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="FacebookFriendsDBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DayOfBirth" ColumnName="DayOfBirth" />
+          <ScalarProperty Name="MonthOfBirth" ColumnName="MonthOfBirth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserFriends">
+      <EntityTypeMapping TypeName="FacebookFriendsDBModel.UserFriend">
+        <MappingFragment StoreEntitySet="UserFriends">
+          <ScalarProperty Name="UserFriеndID" ColumnName="UserFriеndID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DayOfBirth" ColumnName="DayOfBirth" />
+          <ScalarProperty Name="MonthOfBirth" ColumnName="MonthOfBirth" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

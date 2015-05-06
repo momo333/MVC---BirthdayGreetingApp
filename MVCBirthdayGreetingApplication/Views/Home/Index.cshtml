@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<html>
+<head>
+    <title>Birthday Application</title>
+    <link rel="stylesheet" href="~/Content/styles.css" />
+</head>
+<div class="jumbotron">
+    <h1>Birthday Application :) </h1>
+    
+    </div>
+    <p>@Html.ActionLink("See people who have birthday today", "BirthdaysToday")</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+
+        <a href="/MailApplication/Birthday">
+            <img src="/img/arrow.jpg" style="vertical-align:middle">
+        </a>
+        <p class="centrext"><span class="nowrap">Click the button to send mails</span></p>
+        <br\>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+    </div>
+</div>
+

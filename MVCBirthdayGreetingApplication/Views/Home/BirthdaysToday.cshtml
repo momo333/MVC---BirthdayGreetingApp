@@ -1,0 +1,18 @@
+﻿@model  IQueryable<BirthdayGreetingAPI.Data.UserFriend>
+
+<h3>Today's Birthdays : </h3>
+@Html.RadioButton("searchBy", "Name", true) <text>Name</text>
+@Html.TextBox("search") <input type="submit" value="search" />
+
+@foreach (var friend in Model)
+{
+    <ol>
+        <li>
+            @friend.Name
+        </li>
+    </ol>
+}
+<p>Happy Birthday and best wishes!</p>
+
+
+
